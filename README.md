@@ -4,7 +4,7 @@ End-to-end machine-learning project that predicts the presence of heart disease 
 
 > Educational portfolio project. Not a medical device and not for clinical use.
 
-**Live demo:** *add your Streamlit Community Cloud link here*
+**Live demo:** *https://heart-disease-prediction-sbhardwaj13.streamlit.app/*
 
 ## What it does
 
