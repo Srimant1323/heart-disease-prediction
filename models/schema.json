@@ -1,0 +1,156 @@
+{
+  "best_model": "Random Forest",
+  "models": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Random Forest": "random_forest.joblib",
+    "XGBoost": "xgboost.joblib"
+  },
+  "target": "1 = heart disease present (original label > 0), 0 = absent",
+  "features": {
+    "age": {
+      "label": "Age (years)",
+      "description": "Patient age in years.",
+      "nullable": false,
+      "type": "numeric",
+      "min": 28.0,
+      "max": 77.0,
+      "median": 54.0,
+      "integer": true
+    },
+    "sex": {
+      "label": "Sex",
+      "description": "Sex as recorded in the dataset.",
+      "nullable": false,
+      "type": "categorical",
+      "options": [
+        "Female",
+        "Male"
+      ],
+      "mode": "Male"
+    },
+    "cp": {
+      "label": "Chest pain type",
+      "description": "Type of chest pain: typical angina, atypical angina, non-anginal pain or asymptomatic.",
+      "nullable": false,
+      "type": "categorical",
+      "options": [
+        "asymptomatic",
+        "atypical angina",
+        "non-anginal",
+        "typical angina"
+      ],
+      "mode": "asymptomatic"
+    },
+    "trestbps": {
+      "label": "Resting blood pressure (mm Hg)",
+      "description": "Resting blood pressure on admission.",
+      "nullable": true,
+      "type": "numeric",
+      "min": 80.0,
+      "max": 200.0,
+      "median": 130.0,
+      "integer": true
+    },
+    "chol": {
+      "label": "Serum cholesterol (mg/dl)",
+      "description": "Serum cholesterol.",
+      "nullable": true,
+      "type": "numeric",
+      "min": 85.0,
+      "max": 603.0,
+      "median": 240.0,
+      "integer": true
+    },
+    "fbs": {
+      "label": "Fasting blood sugar > 120 mg/dl",
+      "description": "Whether fasting blood sugar exceeded 120 mg/dl.",
+      "nullable": true,
+      "type": "categorical",
+      "options": [
+        "False",
+        "True"
+      ],
+      "mode": "False"
+    },
+    "restecg": {
+      "label": "Resting ECG result",
+      "description": "Resting electrocardiogram result.",
+      "nullable": true,
+      "type": "categorical",
+      "options": [
+        "lv hypertrophy",
+        "normal",
+        "st-t abnormality"
+      ],
+      "mode": "normal"
+    },
+    "thalch": {
+      "label": "Maximum heart rate achieved (bpm)",
+      "description": "Maximum heart rate achieved during the stress test.",
+      "nullable": true,
+      "type": "numeric",
+      "min": 60.0,
+      "max": 202.0,
+      "median": 140.0,
+      "integer": true
+    },
+    "exang": {
+      "label": "Exercise-induced angina",
+      "description": "Whether exercise triggered angina.",
+      "nullable": true,
+      "type": "categorical",
+      "options": [
+        "False",
+        "True"
+      ],
+      "mode": "False"
+    },
+    "oldpeak": {
+      "label": "ST depression (exercise vs rest)",
+      "description": "ST depression induced by exercise relative to rest.",
+      "nullable": true,
+      "type": "numeric",
+      "min": -2.6,
+      "max": 6.2,
+      "median": 0.5,
+      "integer": false
+    },
+    "slope": {
+      "label": "Slope of peak-exercise ST segment",
+      "description": "Slope of the peak-exercise ST segment.",
+      "nullable": true,
+      "type": "categorical",
+      "options": [
+        "downsloping",
+        "flat",
+        "upsloping"
+      ],
+      "mode": "flat"
+    },
+    "ca": {
+      "label": "Major vessels coloured by fluoroscopy (0-3)",
+      "description": "Number of major vessels (0-3) coloured by fluoroscopy. Often not recorded.",
+      "nullable": true,
+      "type": "discrete",
+      "options": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mode": 0
+    },
+    "thal": {
+      "label": "Thalassemia (stress test result)",
+      "description": "Result of the thallium stress test. Often not recorded.",
+      "nullable": true,
+      "type": "categorical",
+      "options": [
+        "fixed defect",
+        "normal",
+        "reversable defect"
+      ],
+      "mode": "normal"
+    }
+  }
+}
